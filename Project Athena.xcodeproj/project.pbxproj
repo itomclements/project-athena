@@ -11,7 +11,7 @@
 		83FBE97BDCABEEBFA765F66F /* Pods_Project_AthenaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC5DD46D6E29A60636B4D4D /* Pods_Project_AthenaUITests.framework */; };
 		A999FF74A5D367B88514A4BA /* Pods_Project_AthenaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423395F31BD00C2820D9628E /* Pods_Project_AthenaTests.framework */; };
 		E2CEE97E1F7C5A5A00BC1C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEE97D1F7C5A5A00BC1C91 /* AppDelegate.swift */; };
-		E2CEE9801F7C5A5A00BC1C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEE97F1F7C5A5A00BC1C91 /* ViewController.swift */; };
+		E2CEE9801F7C5A5A00BC1C91 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEE97F1F7C5A5A00BC1C91 /* AuthViewController.swift */; };
 		E2CEE9831F7C5A5A00BC1C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CEE9811F7C5A5A00BC1C91 /* Main.storyboard */; };
 		E2CEE9851F7C5A5A00BC1C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CEE9841F7C5A5A00BC1C91 /* Assets.xcassets */; };
 		E2CEE9881F7C5A5A00BC1C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CEE9861F7C5A5A00BC1C91 /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		D8177BCBC08779A77BB1F3BC /* Pods_Project_Athena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Athena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CEE97A1F7C5A5A00BC1C91 /* Project Athena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Athena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CEE97D1F7C5A5A00BC1C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2CEE97F1F7C5A5A00BC1C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2CEE97F1F7C5A5A00BC1C91 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E2CEE9821F7C5A5A00BC1C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2CEE9841F7C5A5A00BC1C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2CEE9871F7C5A5A00BC1C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E2CEE97D1F7C5A5A00BC1C91 /* AppDelegate.swift */,
-				E2CEE97F1F7C5A5A00BC1C91 /* ViewController.swift */,
+				E2CEE97F1F7C5A5A00BC1C91 /* AuthViewController.swift */,
 				E2CEE9811F7C5A5A00BC1C91 /* Main.storyboard */,
 				E2CEE9841F7C5A5A00BC1C91 /* Assets.xcassets */,
 				E2CEE9861F7C5A5A00BC1C91 /* LaunchScreen.storyboard */,
@@ -450,7 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2CEE9801F7C5A5A00BC1C91 /* ViewController.swift in Sources */,
+				E2CEE9801F7C5A5A00BC1C91 /* AuthViewController.swift in Sources */,
 				E2CEE97E1F7C5A5A00BC1C91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

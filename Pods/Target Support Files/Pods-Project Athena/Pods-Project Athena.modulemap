@@ -1,0 +1,6 @@
+framework module Pods_Project_Athena {
+  umbrella header "Pods-Project Athena-umbrella.h"
+
+  export *
+  module * { export * }
+}

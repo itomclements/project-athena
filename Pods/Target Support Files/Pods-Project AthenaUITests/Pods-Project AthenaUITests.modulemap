@@ -1,0 +1,6 @@
+framework module Pods_Project_AthenaUITests {
+  umbrella header "Pods-Project AthenaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
