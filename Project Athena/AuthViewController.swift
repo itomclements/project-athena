@@ -38,6 +38,14 @@ class AuthViewController: UIViewController {
             if let password = passwordTextField.text{
                 if loginMode{
                     // Login
+                    Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                        if let error = error{
+                            print(error)
+                        } else {
+                            print("login success")
+                            self.performSegue(withIdentifier: "authToSnaps", sender: nil)
+                        }
+                    })
                 } else {
                     // Sign up
                     Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -46,6 +54,7 @@ class AuthViewController: UIViewController {
                             
                         }else {
                             print("sign up success")
+                            self.performSegue(withIdentifier: "authToSnaps", sender: nil)
                         }
                     })
                 }
