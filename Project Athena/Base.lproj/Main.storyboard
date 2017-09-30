@@ -153,6 +153,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udq-ku-IMy">
                                 <rect key="frame" x="171" y="428" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="OYS-dR-mSM" eventType="touchUpInside" id="gag-JA-Yt7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,10 +175,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add an Image" id="8QK-j3-lqV">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="ipV-IB-oTg"/>
-                            <barButtonItem systemItem="organize" id="w8k-2g-F3c"/>
+                            <barButtonItem systemItem="camera" id="ipV-IB-oTg">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="OYS-dR-mSM" id="PIG-F5-gLg"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="w8k-2g-F3c">
+                                <connections>
+                                    <action selector="photosTapped:" destination="OYS-dR-mSM" id="S6h-aw-u1X"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="fYG-UT-z9p" id="872-yO-6dx"/>
+                        <outlet property="imageView" destination="U5M-mD-MVA" id="IQT-TH-xzu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFc-zL-pHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
