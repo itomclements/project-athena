@@ -190,16 +190,17 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="fYG-UT-z9p" id="872-yO-6dx"/>
                         <outlet property="imageView" destination="U5M-mD-MVA" id="IQT-TH-xzu"/>
+                        <segue destination="boH-Vz-Nbw" kind="show" identifier="addImage" id="dv0-5H-EbF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFc-zL-pHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2624.8000000000002" y="133.5832083958021"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Select User Table View Controller-->
         <scene sceneID="sOs-hB-h9b">
             <objects>
-                <tableViewController id="boH-Vz-Nbw" sceneMemberID="viewController">
+                <tableViewController id="boH-Vz-Nbw" customClass="SelectUserTableViewController" customModule="Project_Athena" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dfi-bG-szH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,27 +220,13 @@
                             <outlet property="delegate" destination="boH-Vz-Nbw" id="4Xr-6x-TKs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vyZ-dg-Am9"/>
+                    <navigationItem key="navigationItem" id="vyZ-dg-Am9">
+                        <barButtonItem key="backBarButtonItem" title="Add Image" id="wte-Ce-bIY"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1l-nw-ET4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4023" y="134"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="YKH-Hj-3Jj">
-            <objects>
-                <navigationController id="0FJ-h1-AIU" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mgw-Qg-bS2">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="boH-Vz-Nbw" kind="relationship" relationship="rootViewController" id="xni-NK-cUU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4qZ-RF-07o" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3295" y="134"/>
+            <point key="canvasLocation" x="3511" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tg1-Df-Pl6">

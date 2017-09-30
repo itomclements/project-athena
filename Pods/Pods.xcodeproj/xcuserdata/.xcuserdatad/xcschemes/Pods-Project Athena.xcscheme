@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4FB5BF4D73D58CD87A27EC399899A48F'
+               BlueprintIdentifier = '0E59060C6FEE817EF13F1FD7F8A4950C'
                BlueprintName = 'Pods-Project Athena'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-Project Athena.framework'>

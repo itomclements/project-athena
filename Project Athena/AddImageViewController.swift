@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class AddImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -42,15 +43,20 @@ class AddImageViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBAction func nextTapped(_ sender: Any) {
+        let imageFolder = Storage.storage().reference().child("images")
+        if let image = imageView.image {
+            if let imageData = UIImageJPEGRepresentation(image, 0.1){
+                imageFolder.child("myPic.jpeg").putData(imageData, metadata: nil, completion: { (metadata, error) in
+                    if let error = error {
+                        print("error")
+                    } else {
+                        self.performSegue(withIdentifier: "addImage", sender: nil)
+                        print("Upload Complete")
+                    }
+                })
+        }
+        
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+}
 }

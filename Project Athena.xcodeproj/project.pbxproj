@@ -20,6 +20,7 @@
 		E2CEE9931F7C5A5A00BC1C91 /* Project_AthenaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEE9921F7C5A5A00BC1C91 /* Project_AthenaTests.swift */; };
 		E2CEE99E1F7C5A5A00BC1C91 /* Project_AthenaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEE99D1F7C5A5A00BC1C91 /* Project_AthenaUITests.swift */; };
 		E2CEE9AC1F7C5B9900BC1C91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CEE9AB1F7C5B5500BC1C91 /* GoogleService-Info.plist */; };
+		E2D4A5331F7FBCA200BA830E /* SelectUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4A5321F7FBCA200BA830E /* SelectUserTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E2CEE99D1F7C5A5A00BC1C91 /* Project_AthenaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_AthenaUITests.swift; sourceTree = "<group>"; };
 		E2CEE99F1F7C5A5A00BC1C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2CEE9AB1F7C5B5500BC1C91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2D4A5321F7FBCA200BA830E /* SelectUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserTableViewController.swift; sourceTree = "<group>"; };
 		E90DA37F3F436B5F1BD6B19E /* Pods-Project AthenaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project AthenaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project AthenaUITests/Pods-Project AthenaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FF8F1C50AAF5C2A397091BA4 /* Pods-Project AthenaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project AthenaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project AthenaTests/Pods-Project AthenaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 				E26557081F7FA851005A579E /* SnapsTableViewController.swift */,
 				E265570A1F7FB038005A579E /* AddImageViewController.swift */,
 				E2CEE97F1F7C5A5A00BC1C91 /* AuthViewController.swift */,
+				E2D4A5321F7FBCA200BA830E /* SelectUserTableViewController.swift */,
 				E2CEE9811F7C5A5A00BC1C91 /* Main.storyboard */,
 				E2CEE9841F7C5A5A00BC1C91 /* Assets.xcassets */,
 				E2CEE9861F7C5A5A00BC1C91 /* LaunchScreen.storyboard */,
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26557091F7FA851005A579E /* SnapsTableViewController.swift in Sources */,
+				E2D4A5331F7FBCA200BA830E /* SelectUserTableViewController.swift in Sources */,
 				E2CEE9801F7C5A5A00BC1C91 /* AuthViewController.swift in Sources */,
 				E265570B1F7FB038005A579E /* AddImageViewController.swift in Sources */,
 				E2CEE97E1F7C5A5A00BC1C91 /* AppDelegate.swift in Sources */,
