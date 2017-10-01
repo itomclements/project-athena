@@ -23,7 +23,16 @@ class SnapsTableViewController: UITableViewController {
                 self.snaps.append(snapshot)
                 self.tableView.reloadData()
             
-       
+            Database.database().reference().child("users").child(uid).child("snaps").observe(.childRemoved, with:{(snapshot) in
+                for snap in self.snaps{
+                    var index = 0
+                    if snapshot.key == snap.key{
+                    self.snaps.remove(at: index)
+                }
+                    index+=1
+                }
+                self.tableView.reloadData()
+            })
             
         }
         }

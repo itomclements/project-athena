@@ -8,6 +8,9 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
+import FirebaseStorage
+import SDWebImage
 
 class ViewSnapViewController: UIViewController {
     
@@ -15,6 +18,8 @@ class ViewSnapViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var snapshot : DataSnapshot?
+    var imageName = ""
+    var snapID = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +33,11 @@ class ViewSnapViewController: UIViewController {
                     if let imageURL = snapDictionary["imageURL"] as? String{
                         if let message = snapDictionary["message"] as? String{
                             messageLabel.text = message
-                            
-                            
+                            if let url = URL(string: imageURL){
+                                imageView.sd_setImage(with: url)
+                            }
+                            self.imageName = imageName
+                            snapID = snapshot.key
                         }
                     }
                 }
@@ -39,6 +47,13 @@ class ViewSnapViewController: UIViewController {
         }
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let uid = Auth.auth().currentUser?.uid{
+            //remove from db
+            Database.database().reference().child("users").child(uid).child("snaps").child(snapID).removeValue()
+            //remove from images
+            Storage.storage().reference().child("images").child(imageName).delete(completion: nil)
+        }
+    }
     
 }
