@@ -10,6 +10,7 @@
 		16B08105DDE1ED2EDB1C6A8E /* Pods_Project_Athena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8177BCBC08779A77BB1F3BC /* Pods_Project_Athena.framework */; };
 		83FBE97BDCABEEBFA765F66F /* Pods_Project_AthenaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC5DD46D6E29A60636B4D4D /* Pods_Project_AthenaUITests.framework */; };
 		A999FF74A5D367B88514A4BA /* Pods_Project_AthenaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423395F31BD00C2820D9628E /* Pods_Project_AthenaTests.framework */; };
+		E257FF781F8104C000994158 /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257FF771F8104C000994158 /* ViewSnapViewController.swift */; };
 		E26557091F7FA851005A579E /* SnapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26557081F7FA851005A579E /* SnapsTableViewController.swift */; };
 		E265570B1F7FB038005A579E /* AddImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265570A1F7FB038005A579E /* AddImageViewController.swift */; };
 		E2CEE97E1F7C5A5A00BC1C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CEE97D1F7C5A5A00BC1C91 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		B35E3189AF5E54B893E61C7F /* Pods-Project Athena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Athena.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project Athena/Pods-Project Athena.release.xcconfig"; sourceTree = "<group>"; };
 		BE17F64636C59F0B6B7A894E /* Pods-Project AthenaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project AthenaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project AthenaTests/Pods-Project AthenaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8177BCBC08779A77BB1F3BC /* Pods_Project_Athena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Athena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E257FF771F8104C000994158 /* ViewSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		E26557081F7FA851005A579E /* SnapsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsTableViewController.swift; sourceTree = "<group>"; };
 		E265570A1F7FB038005A579E /* AddImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageViewController.swift; sourceTree = "<group>"; };
 		E2CEE97A1F7C5A5A00BC1C91 /* Project Athena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Athena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 			children = (
 				E2CEE97D1F7C5A5A00BC1C91 /* AppDelegate.swift */,
 				E26557081F7FA851005A579E /* SnapsTableViewController.swift */,
+				E257FF771F8104C000994158 /* ViewSnapViewController.swift */,
 				E265570A1F7FB038005A579E /* AddImageViewController.swift */,
 				E2CEE97F1F7C5A5A00BC1C91 /* AuthViewController.swift */,
 				E2D4A5321F7FBCA200BA830E /* SelectUserTableViewController.swift */,
@@ -460,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26557091F7FA851005A579E /* SnapsTableViewController.swift in Sources */,
+				E257FF781F8104C000994158 /* ViewSnapViewController.swift in Sources */,
 				E2D4A5331F7FBCA200BA830E /* SelectUserTableViewController.swift in Sources */,
 				E2CEE9801F7C5A5A00BC1C91 /* AuthViewController.swift in Sources */,
 				E265570B1F7FB038005A579E /* AddImageViewController.swift in Sources */,

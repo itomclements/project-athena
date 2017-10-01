@@ -14,6 +14,8 @@ class AddImageViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var descriptionTextField: UITextField!
     
+    var imageName = "\(NSUUID().uuidString).jpeg"
+    var imageURL = ""
     var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -46,17 +48,30 @@ class AddImageViewController: UIViewController, UIImagePickerControllerDelegate,
         let imageFolder = Storage.storage().reference().child("images")
         if let image = imageView.image {
             if let imageData = UIImageJPEGRepresentation(image, 0.1){
-                imageFolder.child("myPic.jpeg").putData(imageData, metadata: nil, completion: { (metadata, error) in
+                imageFolder.child(imageName).putData(imageData, metadata: nil, completion: { (metadata, error) in
                     if let error = error {
                         print("error")
                     } else {
-                        self.performSegue(withIdentifier: "addImage", sender: nil)
-                        print("Upload Complete")
+                        
+                        if let imageURL = metadata?.downloadURL()?.absoluteString {
+                            self.imageURL = imageURL
+                            self.performSegue(withIdentifier: "addImage", sender: nil)
+                        }
                     }
                 })
         }
         
     }
+        
 
 }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectTableVC = segue.destination as? SelectUserTableViewController {
+            selectTableVC.imageURL = imageURL   
+            selectTableVC.imageName = imageName
+            if let message = descriptionTextField.text {
+                selectTableVC.message = message
+            }
+        }
+    }
 }

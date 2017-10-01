@@ -14,6 +14,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Database'
+pod 'SDWebImage'
 
   target 'Project AthenaTests' do
     inherit! :search_paths
